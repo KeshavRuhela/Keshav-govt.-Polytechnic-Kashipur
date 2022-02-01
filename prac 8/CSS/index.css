@@ -1,0 +1,11 @@
+*{
+    margin: 10px;
+    padding: 0px;
+}
+button{
+    padding: 5px;
+    border: 2px solid blue;
+    background-color: transparent;
+    font-weight: 700;
+    cursor: pointer;
+}

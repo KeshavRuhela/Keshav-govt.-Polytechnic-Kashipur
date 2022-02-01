@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Interval</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <button id="first" value="hello">First Click</button>
+    <div></div>
+        <script>
+ var last ;
+ $('button').click(function(event){
+    if(last){
+          var diff=event.timeStamp-last;
+          $('div').append("<br>Difference is :"+diff+"")
+          console.log('if');
+          last=null;
+          $('#first').text("First Click")
+       }
+       else{
+        // $('div').append("<br><b>Click Again</b>");
+        $('#first').text("Click Again")
+          last=event.timeStamp;
+          console.log('else');
+       }
+     });
+    </script>
+</body>
+</html>

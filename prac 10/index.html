@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensble/Disable</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/jquery/index.js"></script>
+    <style>
+        input{
+            margin: 8px;
+        }
+        a{
+            font-size: 15px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div><input type="text" name="userName" placeholder="User Name" id="user"></div>
+        <div><input type="email" name="userName" placeholder="Email Id" id="user"></div>
+        <div><input type="number" name="userName" placeholder="Contact Number" id="user"></div>
+        <div><input type="password" name="userName" placeholder="password" id="user"></div>
+        <div><input type="checkbox" onclick="tryy()"  name="check" placeholder="password" id="check"><a>Lorem ipsum dolor sit amet, consectetur adipisicing. <abbr title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error iste adipisci vitae est incidunt, voluptatem delectus hic earum, quam dolore debitis doloribus soluta!" style="font-size:20px; opacity: 1; font-weight:bold ; cursor:pointer">...</abbr></a></div>
+        <div><input id="btn" type="submit" value="Submit" disabled></div>
+    </form>
+</body>
+</html>

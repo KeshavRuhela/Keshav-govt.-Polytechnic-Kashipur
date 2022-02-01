@@ -1,0 +1,20 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.mid{
+    width: 40%;
+    margin: 5px auto;
+    text-align: center;
+}
+button{
+    padding: 10px;
+    background-color: transparent;
+    width: 250px;
+}
+button:hover{
+    background-color: tomato;
+    color: white;
+}

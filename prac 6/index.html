@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFrames</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #pos{
+            position: absolute;
+            left: 5px;
+            top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="frame" style="text-align: right; display: none; margin-right:10px;"><iframe src="../prac 2/index.html" height="600px" width="400" title="Iframe Example"></iframe>
+    </div>
+    <iframe id="pos" onmouseover="show();"  src="./ifrmehtml.html" frameborder="0" height="250PX" width="250px" style=" margin: 5px; background-color: aquamarine;" onclick="show();"></iframe>
+    
+    <script>
+        function show(){
+            if(document.getElementById('frame').style.display=="block"){
+                document.getElementById('frame').style.display="none";
+            }
+            else{
+                document.getElementById('frame').style.display="block";
+            }}
+    </script>
+
+</body>
+</html>

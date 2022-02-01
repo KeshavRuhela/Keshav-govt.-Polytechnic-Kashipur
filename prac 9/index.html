@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fad in Fad out</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        *{
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin: 20px auto; padding: 25px; text-align: center;">
+        <div id="temp" style="position:absolute;top: 10px; background-color:burlywood;  height: 200px; width: 200px;"></div>
+        <button id="btemp" style="position:absolute;top: 150px;">Hide Slowly</button>
+    </div>
+    <div style="margin: 20px auto; padding: 25px; text-align: center;">
+        <div id="temp2" style="position:absolute;top: 310px; background-color:burlywood;  height: 200px; width: 200px;"></div>
+        <button id="btemp2" style="position:absolute;top: 350px;">Fad Slowly</button>
+        <button id="bshow2" style="position:absolute;top: 350px; left: 60%;">Show Slowly</button>
+    </div>
+    <script>
+        var A=["","Show Sloly", "Hide Sloly"];
+        i=0;
+        $('#btemp').click(()=>{
+            i++;
+            if(i==3){
+                i=1;
+            }
+            $('#temp').fadeToggle(2000);
+            $('#btemp').text(""+A[i]);
+            // $('#temp').fadeToggle();
+            // $('#temp').fadeToggle("slow");
+        });
+        $('#btemp2').click(()=>{
+            $('#temp2').fadeOut(2000);
+        });
+        $('#bshow2').click(()=>{
+            $('#temp2').fadeIn(2000);
+        });
+    </script>
+</body>
+</html>

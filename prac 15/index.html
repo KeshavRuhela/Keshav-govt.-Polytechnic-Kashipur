@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Number On over</title>
+</head>
+<body>
+    <div onmouseover="count()" style="text-align:center; font-weight: 700; padding: 5px; background-color:chartreuse; width: 40%; height: 50px; font-size: 30px;">Over me</div>
+    <div id="data"></div>
+    <script>
+        var i=0;
+        function count() {
+            i++;
+            document.getElementById('data').innerHTML="Number of move : "+i;
+        }
+    </script>
+</body>
+</html>
